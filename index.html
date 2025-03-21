@@ -118,6 +118,11 @@
                     <label for="charge" class="form-label">Charge ($)</label>
                     <input type="number" class="form-control" id="charge" step="0.01" required>
                 </div>
+                
+                <div class="mb-4"></div>
+                    <label for="comments" class="form-label">comments</label>
+                    <input type="textbox" class="form-control" id="comments"  required>
+                </div>
 
                 <button type="submit" class="btn btn-primary w-100">Submit Order</button>
             </form>
@@ -148,7 +153,8 @@
                 product: document.getElementById('product').value,
                 car: document.getElementById('car').value,
                 year: document.getElementById('year').value,
-                charge: document.getElementById('charge').value
+                charge: document.getElementById('charge').value,
+                comments: document.getElementById('comments').value
             };
         
             fetch('https://script.google.com/macros/s/AKfycbwFYlRa5275U8ZzKNg88N8qtxLvN0CXkhJN_GhnHMSX04hbqkO9RHMlu8T3Rkazn2o_/exec', {
